@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/StratosMedia/static/css/main.4f18a392.css",
-    "main.js": "/StratosMedia/static/js/main.af030dc0.js",
+    "main.css": "/StratosMedia/static/css/main.6b7e1b75.css",
+    "main.js": "/StratosMedia/static/js/main.05ed586a.js",
     "static/media/About-us.jpg": "/StratosMedia/static/media/About-us.a89c8cb38e4a59a3181d.jpg",
     "static/media/Home-backgroundd.jpg": "/StratosMedia/static/media/Home-backgroundd.ad9f3be5ee8bc0bdf3db.jpg",
     "static/media/brochure3.1.jpg": "/StratosMedia/static/media/brochure3.1.a4b864aa9e7da15f6fc2.jpg",
     "static/media/brochure2,1.jpg": "/StratosMedia/static/media/brochure2,1.5f351a30f13c9cdc6f4b.jpg",
     "static/media/brochure2.jpg": "/StratosMedia/static/media/brochure2.8ae8a346c2341cd4b14f.jpg",
     "static/media/brochure3.jpg": "/StratosMedia/static/media/brochure3.f498e4911317cc9eaa30.jpg",
+    "static/media/brochure4.1.jpg": "/StratosMedia/static/media/brochure4.1.36933acc545c4f96fda0.jpg",
+    "static/media/Menu2.jpg": "/StratosMedia/static/media/Menu2.8e846e0a782888fab2e7.jpg",
+    "static/media/brochure4.jpg": "/StratosMedia/static/media/brochure4.b90ca5ba104c97b39302.jpg",
+    "static/media/Menu.jpg": "/StratosMedia/static/media/Menu.dccd642331a1170d600a.jpg",
     "static/media/mobilje6.jpg": "/StratosMedia/static/media/mobilje6.ee5278bd4e9d4389946c.jpg",
     "static/media/mobilje1.jpg": "/StratosMedia/static/media/mobilje1.7ddf207ade2d01891047.jpg",
     "static/media/mobilje3.jpg": "/StratosMedia/static/media/mobilje3.c86630dea642478daf72.jpg",
@@ -20,11 +24,11 @@
     "static/media/brochure1.jpg": "/StratosMedia/static/media/brochure1.7ef1296b8dc4694dcb81.jpg",
     "static/media/brochure1.1.jpg": "/StratosMedia/static/media/brochure1.1.5370e173dc6f162d7ce6.jpg",
     "index.html": "/StratosMedia/index.html",
-    "main.4f18a392.css.map": "/StratosMedia/static/css/main.4f18a392.css.map",
-    "main.af030dc0.js.map": "/StratosMedia/static/js/main.af030dc0.js.map"
+    "main.6b7e1b75.css.map": "/StratosMedia/static/css/main.6b7e1b75.css.map",
+    "main.05ed586a.js.map": "/StratosMedia/static/js/main.05ed586a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f18a392.css",
-    "static/js/main.af030dc0.js"
+    "static/css/main.6b7e1b75.css",
+    "static/js/main.05ed586a.js"
   ]
 }
