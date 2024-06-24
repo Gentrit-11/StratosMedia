@@ -1,0 +1,99 @@
+.pricing-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #1f2041;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  top: 25px;
+}
+
+.plan {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.plan.premium {
+  position: relative;
+  top: -20px;
+}
+
+.plan-header {
+  width: 100%;
+  padding: 10px 0;
+  margin: -20px -20px 20px -20px;
+  color: white;
+}
+
+.basic-header {
+  background-color: #33ccff;
+}
+
+.premium-header {
+  background-color: #3399ff;
+}
+
+.standard-header {
+  background-color: #33ccff;
+}
+
+.plan h2 {
+  margin: 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.plan li {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: auto;
+  color: #0099cc;
+}
+
+/* Media query to change the order on mobile devices */
+@media screen and (max-width: 600px) {
+  .plan.basic {
+    order: 1;
+  }
+  .plan.standard {
+    order: 2;
+  }
+  .plan.premium {
+    order: 3;
+  }
+}

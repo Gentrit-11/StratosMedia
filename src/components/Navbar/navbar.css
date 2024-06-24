@@ -1,0 +1,175 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #000;
+  color: white;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0 150px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  width: 70%;
+  height: 75px;
+  border-radius: 50px;
+}
+
+.logo-img {
+  margin-left: 40px;
+  margin-top: 12px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75%;
+}
+
+.nav-link {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+}
+
+.button {
+  border: 1px solid yellow;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.mobile-menu-icon {
+  font-size: 30px;
+  margin-right: 20px;
+  display: none;
+}
+
+.menu-icon-close,
+.menu-icon-open {
+  cursor: pointer;
+  transition: transform 0.5s ease; /* Add transition for icon */
+}
+
+@media screen and (max-width: 1210px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: block;
+    top: 75px;
+    background-color: #000;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease; /* Add transition for icon */
+  }
+  .nav-links-mobile.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    padding-bottom: 15px;
+  }
+  .nav-link {
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+  }
+  .button {
+    border: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+    transition: transform 0.5s ease; /* Add transition for icon */
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .navbar {
+    padding: 0;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .logo-container img {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar {
+    align-items: normal;
+  }
+}
+
+.nav-link-contact {
+  border: 1px solid #854ce6;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 0 10px; /* Adjust margin as needed for better spacing on mobile */
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link-contact {
+    padding: 8px; /* Ensure consistent padding on mobile */
+    border: 1px solid #854ce6; /* Ensure border is visible */
+    border-radius: 5px; /* Ensure border-radius is applied */
+    text-align: center; /* Center text for better readability */
+    display: block;
+    max-width: 100%;
+    width: 30%;
+   margin: 10px auto; /* Center horizontally with margin */
+    
+  }
+}
+
+/* Keyframes for icon animation */
+@keyframes rotate-open {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes rotate-close {
+  0% { transform: rotate(180deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Icon animation classes */
+.menu-icon-open {
+  animation: rotate-open 0.5s forwards;
+}
+
+.menu-icon-close {
+  animation: rotate-close 0.5s forwards;
+}

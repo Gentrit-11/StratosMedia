@@ -1,0 +1,75 @@
+.FooterContainer{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+background-color: #1f2041;
+}
+.FooterWrapper{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    color: #F2F3F4;
+}
+.Logo{
+    font-weight: 600;
+    font-size: 20px;
+    color:#F2F3F4;
+}
+.Nav{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  
+}
+.NavLink{
+    color: #F2F3F4;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+.NavLink:hover {
+    color:#F2F3F4;
+  }
+  .SocialMediaIcons{
+    display: flex;
+  margin-top: 1rem;
+  }
+  .SocialMediaIcon{
+    display: inline-block;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    color:#F2F3F4;
+    transition: color 0.2s ease-in-out;
+  }
+  .SocialMediaIcon:hover {
+    color: #F2F3F4;
+  }
+  .Copyright{
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #b1b2b3;
+    text-align: center;
+  }
+@media (max-width: 768px) {
+.Nav{
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+.NavLink{
+    font-size: 1rem;
+}
+  }
+
+  

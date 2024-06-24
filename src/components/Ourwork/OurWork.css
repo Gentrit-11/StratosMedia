@@ -1,0 +1,365 @@
+/* OurWork.css */
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 4s ease-out, transform 4s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.ourwork {
+  margin: max(0%, 40px) 0;
+  padding: 0 2%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  margin: 0 5px;
+  border-radius: 4px 4px 0 0;
+  background-color: #f1f1f1;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rec-pagination {
+  display: none;
+}
+
+.ourwork .slider-item {
+  position: relative;
+  padding: max(6px, 0.5vw);
+  border-radius: max(12.5px, 1vw);
+  width: 95%;
+  margin: max(25px, 2.5vw) 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 10px 22px -5px,
+    rgba(0, 0, 0, 0.15) 0px 7px 15px -8px;
+  transition: transform 0.9s;
+}
+
+.slider-item:hover {
+  transform: scale(0.9);
+}
+
+.img-container-Blog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: max(12.5px, 1vw);
+}
+
+.img-work {
+  width: calc(50% - 10px);
+  height: 530px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+
+/* .img-work:hover {
+  transform: scale(1.1);
+} */
+
+.category-blog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: max(7px, 0.5vw);
+  background: #fff;
+  color: var(--light-color);
+  padding: max(7px, 0.5vw) max(17.5px, 1.25vw);
+  font-size: max(12px, 0.8vw);
+}
+
+.text-blog {
+  padding: max(1px, 1vw) max(2px, 0.7vw);
+  display: block;
+  margin: 0 auto;
+}
+
+.date-blog {
+  font-size: max(12px, 0.8vw);
+  margin-bottom: max(10px, 0.8vw);
+}
+
+.h1-ourwork a {
+  display: flex;
+  align-items: center;
+}
+
+.h6-blog {
+  font-size: max(12.5px, 0.825vw);
+  font-weight: 600;
+  flex: 1;
+  margin-right: max(15px, 1.25vw);
+  line-height: 1.5;
+  color: #000;
+}
+
+.circle-blog {
+  width: max(33px, 2.5vw);
+  height: max(33px, 2.5vw);
+  border-radius: 50%;
+  border: 1px solid #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(15px, 1.1vw);
+  color: #aaa;
+  transition: transform 0.7s ease-in-out;
+}
+
+.circle-blog:hover {
+  transform: rotate(45deg);
+}
+
+.rec-carousel-item-visible {
+  margin: 0;
+  display: flex;
+}
+
+.rec-arrow,
+.rec-arrow-left,
+.rec-arrow-right {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  width: max(30px, 2.65vw) !important;
+  height: max(30px, 2.65vw) !important;
+  min-width: max(30px, 2.65vw) !important;
+  min-height: max(30px, 2.65vw) !important;
+  max-width: max(30px, 2.65vw) !important;
+  max-height: max(30px, 2.65vw) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: max(30px, 2.65vw) !important;
+  border-radius: 0 !important;
+  color: #8035a0 !important;
+}
+
+
+@media (max-width: 1350px) {
+  .ourwork {
+    padding: 0 1.5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .h1-blog {
+    padding: 0 2.5%;
+  }
+
+  .ourwork .slider-item {
+    width: 97.5%;
+    top: 50px;
+  }
+}
+
+/* Apply animations to images on mobile devices */
+@media (max-width: 550px) {
+  .img-container-Blog {
+    flex-wrap: nowrap;
+  }
+  .img-work {
+    display: block;
+    width: 100%;
+    height: 250px;
+  }
+
+
+.slider{
+  width: 100%;
+}
+}
+.h1-ourwork {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: max(25px, 2.35vw);
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  background-image: linear-gradient(#130808, #797474);
+  background-size: auto auto !important;
+  background-clip: border-box !important;
+  background-size: 200% auto !important;
+  color: #110202;
+  background-clip: text !important;
+  -text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline;
+ 
+}
+.h1-ourwork:hover {
+  animation: textclip 2s linear 3;
+  -webkit-animation: textclip 2s linear 3;
+  background-image: linear-gradient(
+    -225deg,
+    var(--main-color) 0%,
+    var(--darker-color) 25%,
+    var(--shadow) 50%,
+    var(--dark-color) 75%,
+    var(--main-color) 100%
+  );
+}
+/* OurWork.css */
+
+/* Modal Overlay */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* Ensure it's higher than other elements */
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 55%;
+  height: 82%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For positioning the close button */
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff0000; /* Red background */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff; /* White color for the X */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-button:hover {
+  background: #cc0000; /* Darker red on hover */
+}
+
+/* Modal Image Base Style */
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Brochures specific styles */
+.modal-image.brochures {
+  width: calc(50% - 10px);
+  height: 720px;
+}
+
+/* Furnitures specific styles */
+.modal-image.furnitures {
+  width: calc(50% - 10px);
+  height: 620px;
+}
+
+/* Menus specific styles */
+.modal-image.menus {
+  width: calc(50% - 10px);
+  height: 720px;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90% !important;
+    height: 90% !important;
+    padding: 0px;
+  }
+  .modal-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95% !important;
+    height: 65% !important;
+  }
+
+  .modal-image {
+    height: auto !important;
+    width: 500px !important;
+  }
+}
+
+
+body.no-scroll {
+  overflow: hidden;
+  pointer-events: none; /* Disable all interactions */
+}
+
+body.no-scroll .modal-overlay {
+  pointer-events: all; /* Enable interactions only for modal */
+}
+
+
+

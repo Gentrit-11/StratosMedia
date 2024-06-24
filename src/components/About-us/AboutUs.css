@@ -1,0 +1,333 @@
+
+/* components/About-us/AboutUs.css */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 4s ease-out, transform 4s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.about-us {
+  padding: 50px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+.about-content {
+  color: white;
+}
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+.different {
+  max-width: 33%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  text-align: left;
+}
+ /* {
+  margin: 0 auto;
+  position: relative;
+  font-size: max(25px, 2.35vw);
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  background-image: linear-gradient(#fff, #fff);
+  background-size: auto auto !important;
+  background-clip: border-box !important;
+  background-size: 200% auto !important;
+  color: #fff;
+  background-clip: text !important;
+  -text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+} */
+.h1-dif {
+  font-size: max(25px, 2.35vw);
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  background-image: linear-gradient(#fff, #fff);
+  background-size: auto auto !important;
+  background-clip: border-box !important;
+  background-size: 200% auto !important;
+  color: #fff;
+  background-clip: text !important;
+  -text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+}
+.h1-dif:hover {
+  animation: textclip 2s linear 3;
+  -webkit-animation: textclip 2s linear 3;
+  background-image: linear-gradient(
+    -225deg,
+    var(--main-color) 0%,
+    var(--darker-color) 25%,
+    var(--shadow) 50%,
+    var(--dark-color) 75%,
+    var(--main-color) 100%
+  );
+}
+.different p {
+  color: white;
+  margin-top: 10px;
+  line-height: 30px;
+}
+.about-img {
+  content: url("./../../images/About-us.jpg");
+  height: 700px;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.about-img:hover {
+  animation: shake 5s;
+
+  animation-iteration-count: infinite;
+}
+.about-title {
+  font-size: max(25px, 2.35vw);
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  background-image: linear-gradient(#fff, #fff);
+  background-size: auto auto !important;
+  background-clip: border-box !important;
+  background-size: 200% auto !important;
+  color: #fff;
+  background-clip: text !important;
+  -text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(10px, 10px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media (max-width: 1125px) {
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
+  .h1-dif {
+    font-size: 15px;
+  }
+  .about-section {
+    text-align: left;
+  }
+  .about-title {
+    font-size: 23px;
+  }
+  .different {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+  .different p {
+    line-height: 30px;
+    font-size: 13px;
+  }
+  .about-img {
+    width: 100%;
+    height: 530px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-section {
+    text-align: left;
+  }
+  .about-title {
+    font-size: 23px;
+  }
+  .different {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+  .different p {
+    line-height: 30px;
+    font-size: 13px;
+  }
+  .about-img {
+    display: none;
+  }
+}
+.animation-container {
+  position: relative;
+  max-width: 100%;
+  width: 380px;
+  height: 390px;
+  background-color: #61dafb;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #282c34;
+  border-radius: 50%;
+  top: 20%;
+  left: 20%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+  }
+}
+
+.rectangle {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+  0% {
+      left: 0%;
+      width: 60px;
+  }
+  50% {
+      left: 50%;
+      width: 120px;
+  }
+  100% {
+      left: 100%;
+      width: 60px;
+  }
+}
+
+/* .animation {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #282c34;
+  border-radius: 10px;
+  animation: bounce 2s infinite, rotateAnim 4s infinite linear;
+} */
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes rotateAnim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.message {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  animation: fadeIn 5s infinite;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+.circle2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: orange;
+  border-radius: 50%;
+  top: 20%;
+  left: 20%;
+  animation: pulse 2s infinite;
+}
+
+@media (max-width: 575px) {
+  .circles{
+display: flex;
+  }
+  
+}

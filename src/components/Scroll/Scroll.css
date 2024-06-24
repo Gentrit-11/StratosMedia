@@ -1,0 +1,25 @@
+/* ScrollToTopButton.css */
+.back-to-top-button {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #007bff; /* Add background color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 44px; /* Increase font size */
+  padding: 5px; /* Add padding for better visibility */
+  cursor: pointer;
+  z-index: 9999;
+  display: none; /* Initially hidden */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.back-to-top-button.show {
+  display: block; /* Show when condition met */
+}
+
+.back-to-top-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: white; /* Ensure icon color remains white */
+}
