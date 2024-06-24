@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/StratosMedia/static/css/main.6b7e1b75.css",
-    "main.js": "/StratosMedia/static/js/main.b46859c0.js",
+    "main.css": "/StratosMedia/static/css/main.39e26361.css",
+    "main.js": "/StratosMedia/static/js/main.8ad3926c.js",
     "static/media/About-us.jpg": "/StratosMedia/static/media/About-us.a89c8cb38e4a59a3181d.jpg",
     "static/media/Home-backgroundd.jpg": "/StratosMedia/static/media/Home-backgroundd.ad9f3be5ee8bc0bdf3db.jpg",
     "static/media/brochure3.1.jpg": "/StratosMedia/static/media/brochure3.1.a4b864aa9e7da15f6fc2.jpg",
@@ -24,11 +24,11 @@
     "static/media/brochure1.jpg": "/StratosMedia/static/media/brochure1.7ef1296b8dc4694dcb81.jpg",
     "static/media/brochure1.1.jpg": "/StratosMedia/static/media/brochure1.1.5370e173dc6f162d7ce6.jpg",
     "index.html": "/StratosMedia/index.html",
-    "main.6b7e1b75.css.map": "/StratosMedia/static/css/main.6b7e1b75.css.map",
-    "main.b46859c0.js.map": "/StratosMedia/static/js/main.b46859c0.js.map"
+    "main.39e26361.css.map": "/StratosMedia/static/css/main.39e26361.css.map",
+    "main.8ad3926c.js.map": "/StratosMedia/static/js/main.8ad3926c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b7e1b75.css",
-    "static/js/main.b46859c0.js"
+    "static/css/main.39e26361.css",
+    "static/js/main.8ad3926c.js"
   ]
 }
